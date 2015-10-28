@@ -1,0 +1,8 @@
+cookbooks/
+.vagrant/
+tmp/
+test/
+apps/
+
+disk1.vdi
+Cheffile.lock
