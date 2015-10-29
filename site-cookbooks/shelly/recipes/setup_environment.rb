@@ -13,12 +13,6 @@ node['shelly']['rubies'].each do |ver|
 		action :install
 		version "4.2.4"
 	end
-
-	rbenv_gem 'mysql2' do
-		rbenv_version "#{ver}"
-		action :install
-		version "0.4.1"
-	end
 	
 	rbenv_gem 'bundler' do
 		rbenv_version "#{ver}"

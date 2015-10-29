@@ -3,7 +3,14 @@ default['shelly']['active_ruby'] = '2.2.3'
 default['shelly']['webdir'] = '/var/www/shelly'
 default['shelly']['webuser'] = 'www-data'
 default['shelly']['appname'] = 'shelly'
-default['shelly']['mysql_password'] = 'password'
+
+default['shelly']['database']['password'] = 'password'
+default['shelly']['database']['username'] = 'root'
+default['shelly']['database']['host'] = 'localhost'
+default['shelly']['database']['name'] = 'shelly'
+
+default['shelly']['database']['app']['username'] = 'db_admin'
+default['shelly']['database']['app']['password'] = 'password'
 
 normal['nginx_passenger']['ruby'] = "/usr/local/rbenv/versions/#{node['shelly']['active_ruby']}/bin/ruby"
 
