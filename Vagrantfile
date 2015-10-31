@@ -42,6 +42,4 @@ Vagrant.configure(2) do |config|
   	chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 	chef.add_recipe "shelly"
   end
-
-  config.vm.synced_folder "apps/", "/var/www/", user: "www-data", group: "www-data"
 end
